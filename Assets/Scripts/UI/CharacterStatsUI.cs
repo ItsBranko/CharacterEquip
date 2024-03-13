@@ -12,7 +12,9 @@ public class CharacterStatsUI : MonoBehaviour
     void Start()
     {
         Stats.IntelligenceChange.AddListener(OnIntelligenceChange);
+        OnIntelligenceChange(Stats.GetIntelligence());
         Stats.StrengthChange.AddListener(OnStrengthChange);
+        OnStrengthChange(Stats.Strength);
     }
 
     private void OnStrengthChange(int newStrength)
