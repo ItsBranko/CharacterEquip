@@ -44,7 +44,7 @@ public class CharacterStats : MonoBehaviour
 
     public void LevelUp()
     {
-        if (item.level <= item.maxLevel)
+        if (item.level < item.maxLevel)
         {
             Strength += 5;
             SetIntelligence(GetIntelligence() + 3);
